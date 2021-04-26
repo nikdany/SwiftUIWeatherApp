@@ -10,6 +10,7 @@ import Foundation
 struct WeatherModel: Decodable {
 	let name: String
 	let main: Temperature
+	
 	let weather: [Description]
 }
 
