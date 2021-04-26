@@ -8,16 +8,17 @@
 import Foundation
 
 struct WeatherModel: Decodable {
-    let name: String
-    let main: Temperature
-    let weather: [Description]
+	let name: String
+	let main: Temperature
+	
+	let weather: [Description]
 }
 
 struct Temperature: Decodable {
-    let temp: Float
+	let temp: Float
 }
 
 struct Description: Decodable {
-    let main: String
-    let description: String
+	let main: String
+	let description: String
 }
